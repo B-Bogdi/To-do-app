@@ -12,7 +12,7 @@ if (tasks.innerHTML == ""){
 function addtasks() {
     if (input.value != "") {
         provide.innerHTML = ""
-        tasks.innerHTML += '<input type="checkbox" id="taskCheck" ><p id="taskslist"> ' + input.value + ' </p>'
+        tasks.innerHTML += '<input type="checkbox" id="taskCheck" ><p id="taskslist" contenteditable="true"> ' + input.value + ' </p>'
         tasks.innerHTML += '<br>'
         input.value = ""
     } else {

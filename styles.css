@@ -2,16 +2,22 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  background-color: rgb(33, 33, 33);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 h1 {
-  background-color: rgb(255, 89, 0);
   color: white;
   text-align: center;
   padding: 10px;
+  width: 250px;
+  border-bottom: 1px solid red;
 }
 .card {
   margin: 10px auto 10px auto;
-  background-color: rgb(236, 224, 224);
+  background-color: rgb(50, 50, 50);
   width: 200px;
   padding: 10px;
   border-radius: 10px;
@@ -26,7 +32,10 @@ input {
   margin: 0px auto 10px auto;
   padding: 2px;
   font-size: 15px;
+  color: white;
   width: 80%;
+  background-color: rgb(50, 50, 50);
+  border: 1px solid rgb(169, 166, 166);
 }
 .provideP,
 .knoting {
@@ -34,7 +43,7 @@ input {
   color: red;
 }
 .knoting {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .buttons {
   display: flex;
@@ -55,21 +64,27 @@ button {
 }
 #addtask {
   background-color: blue;
-  border: 1px solid blue;
+  border: 1px solid rgb(22, 22, 214);
 }
 #cleartasks {
-  background-color: red;
+  background-color: rgb(215, 26, 26);
   border: 1px solid red;
 }
 #cleartasks:hover {
   color: red;
-  background-color: rgb(245, 193, 193);
+  background-color: rgb(248, 191, 191);
 }
 #taskslist {
   display: flex;
   display: inline;
+  color: white;
   margin: 10px 0px 0px 0px;
   font-size: 20px;
+}
+#taskslist:hover::after {
+  content: "(click to edit)";
+  font-size: 15px;
+  align-items: center;
 }
 #taskCheck {
   margin: 10px 5px 0px 5px;

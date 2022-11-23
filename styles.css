@@ -27,6 +27,8 @@ h1 {
 }
 #tasks {
   justify-content: space-around;
+  cursor: pointer;
+  margin-left: 15px;
 }
 input {
   margin: 0px auto 10px auto;
@@ -49,6 +51,7 @@ input {
   display: flex;
   justify-content: space-between;
 }
+
 button {
   width: 100%;
   border: none;
@@ -81,14 +84,17 @@ button {
   margin: 10px 0px 0px 0px;
   font-size: 20px;
 }
-#taskslist:hover::after {
+/* #taskslist:hover::after {
   content: "(click to edit)";
   font-size: 15px;
   align-items: center;
-}
+} */
 #taskCheck {
   margin: 10px 5px 0px 5px;
   padding-top: 100px;
   width: 15px;
   height: 15px;
+}
+#taskCheck:checked ~ #taskslist{
+  text-decoration: line-through;
 }
